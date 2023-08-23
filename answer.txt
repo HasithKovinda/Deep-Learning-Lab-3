@@ -1,0 +1,21 @@
+DL Lab 3
+1).
+1D convolution is used to identify edges in an image by sliding a specialized filter along rows or columns. This filter detects abrupt changes in pixel values, indicating edges. High values in the convolution output correspond to edge locations, revealing where intensity shifts occur in the image.
+
+3).
+a.
+Validation Error Increase with Epochs:
+Validation error can increase with more epochs due to overfitting. As training continues,
+the model might start memorizing the training data instead of generalizing. This results in poor performance on new data, causing validation error to rise.
+To prevent above error,
+Early Stopping: Monitor validation error during training and halt when it starts rising, avoiding overfitting.
+Regularization: Introduce penalties on complex models to encourage generalization.
+Data Augmentation: Increase training data diversity with transformations.
+Dropout: Randomly deactivate neurons to prevent over-reliance on specific ones.
+
+b.
+Mini batch SGD converges faster due to:
+Faster Updates: Frequent parameter updates in mini batch SGD allow quicker adaptation to changing data patterns.
+Noise for Exploration: Randomness in mini batches helps escape local minima, aiding convergence.
+Efficiency: Smaller batch sizes save computation time and memory compared to processing entire datasets in batch GD.
+Parallelism: Modern hardware can parallelize mini batch computations for faster processing.
